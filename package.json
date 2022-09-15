@@ -1,19 +1,20 @@
 {
-  "name": "mytter",
+  "name": "web-app-2",
   "version": "1.0.0",
-  "description": "projeto para materia desenvolvimento web onde deve se desenvolver uma copia do twitter",
-  "main": "index.js",
+  "description": "Web app com NodeJs",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js",
+    "start:dev": "nodemon main.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mayque731/Mytter.git"
-  },
-  "author": "Mayque",
+  "author": "Joao",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mayque731/Mytter/issues"
+  "dependencies": {
+    "express": "^4.18.1",
+    "nunjucks": "^3.2.3"
   },
-  "homepage": "https://github.com/mayque731/Mytter#readme"
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
 }
