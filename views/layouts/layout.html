@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="pt-BR" class="h-100">
+
 <head>
     {% include '../partes/head.html' %}
 </head>
-<body class="d-flex flex-column h-100">
-    <header>
-        {% include '../partes/menu.html' %}
-    </header>
 
+<body>
+
+    {% include '../partes/sidebar.html' %}
     <!-- Begin page content -->
     <main class="flex-shrink-0">
         {% block conteudo %}
@@ -15,10 +15,8 @@
         {% endblock %}
     </main>
 
-    <footer class="footer mt-auto py-3 bg-light">
-        {% include '../partes/footer.html' %}
-    </footer>
 
-    {% include '../partes/scripts.html' %}
+
 </body>
+
 </html>
