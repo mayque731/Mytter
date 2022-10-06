@@ -1,21 +1,22 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', function (request, response) {
+router.get('/home', function (request, response) {
     let user = { 
         nome: 'Joao', 
         email: 'joao@ifro.edu.br'
     };
 
-    response.render('index', {
-        user
-    });
-
+    response.render('home');
 
 });
 
-router.get('/sobre', function (request, response) {
-    response.render('sobre');
+router.get('/', function (request, response) {
+    response.render('home');
+});
+
+router.get('/perfil', function (request, response) {
+    response.render('perfil');
 });
 
 module.exports = router;
