@@ -2,7 +2,8 @@ const nunjucks = require('nunjucks');
 const express = require('express');
 const app = express();
 const routesBase = require('./routes/base');
-const routesContato = require('./routes/contato');
+const routesLogin = require('./routes/login');
+const routesCadastro = require('./routes/cadastro');
 
 // configs template engine
 nunjucks.configure('views', {
@@ -16,7 +17,8 @@ app.use(express.urlencoded({ extended: false }));
 
 // configs routes
 app.use(routesBase);
-app.use(routesContato);
+app.use(routesLogin);
+app.use(routesCadastro);
 
 app.listen('8000', function () {
     console.log('>> Server online:8000');
