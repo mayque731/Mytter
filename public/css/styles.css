@@ -2,13 +2,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none
 }
 
 body {
   --twitter-color: #877ff7;
   --twitter-background: #575656;
+  --twitter-out: #b41d1d;
   background-color: #444444;
   color: white;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+h2 a {
+  text-decoration: none;
 }
 
 .sidebarOption {
@@ -41,13 +52,14 @@ body {
 
 .sidebar__tweet {
   width: 100%;
-  background-color: var(--twitter-color);
+  background-color: var(--twitter-out);
   border: none;
   color: rgb(77, 76, 76);
   font-weight: 900;
   border-radius: 30px;
   height: 50px;
   margin-top: 20px;
+  text-decoration: none;
 }
 
 body {
