@@ -9,3 +9,16 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
+
+model Usuario {
+  id      Int @id @default(autoincrement())
+	nome    String
+	email   String @db.VarChar(255)
+	senha   String 
+}
+
+model Post {
+  id              Int @id @default(autoincrement())
+	conteudo        String @db.VarChar(255)
+	dataAbertura    DateTime @default(now()) 
+}
