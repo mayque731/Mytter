@@ -18,6 +18,16 @@ a:visited {
   color: white;
   text-decoration: none;
 }
+input{
+  color: white;
+  padding: 10px;
+  background-color: #444444;
+  border-radius: 30px;
+  border: solid #877ff7 1px;
+  border-radius: 30px;
+  width: 150px;
+  height: 40px;
+}
 
 h2 a {
   text-decoration: none;
