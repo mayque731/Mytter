@@ -1,6 +1,7 @@
-const nunjucks = require('nunjucks');
-const express = require('express');
+const nunjucks = require('nunjucks'); //templating language for javascript, block inheritance, autoescaping, macros, asynchronous control...
+const express = require('express'); //estrutura de roteamento leve e flexivel;
 const app = express();
+
 const routesBase = require('./routes/base');
 const routesLogin = require('./routes/login');
 const routesCadastro = require('./routes/cadastro');
